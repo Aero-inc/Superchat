@@ -4,24 +4,17 @@ import './App.css';
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
-import 'firebase/analytics';
 
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 firebase.initializeApp({
-  apiKey: "AIzaSyC5W9AC2kIfMaCznS1C7_UZTlN8y90BsCc",
-  authDomain: "symbolic-heaven-293012.firebaseapp.com",
-  projectId: "symbolic-heaven-293012",
-  storageBucket: "symbolic-heaven-293012.appspot.com",
-  messagingSenderId: "701393594800",
-  appId: "1:701393594800:web:e5aa0865a923376cddce75",
-  measurementId: "G-LK8F106M3Y"
+  // Copy and paste them your firebase IDs you get when you start a new project,
+  // to get all the messages in your firebase collection 
 })
 
 const auth = firebase.auth();
 const firestore = firebase.firestore();
-const analytics = firebase.analytics();
 
 function App() {
   const [user] = useAuthState(auth);
@@ -29,7 +22,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1> 💬 </h1>
+        <h1> 💬 MESSAGES</h1>
         <SignOut />
       </header>
 
@@ -53,7 +46,6 @@ function SignIn() {
 
 function SignOut() {
   return auth.currentUser && (
-
     <button onClick={() => auth.signOut()}>Sign Out</button>
   )
 }
