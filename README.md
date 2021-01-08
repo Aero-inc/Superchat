@@ -1,7 +1,7 @@
 ## Sign In Window
 <p align='center'> 
   <a>
-    <img alt="" src="https://github.com/Kushagrabainsla/Superchat/blob/master/Screenshot%202021-01-08%20at%206.49.25%20PM.png" />
+    <img width=400px src="https://github.com/Kushagrabainsla/Superchat/blob/master/Screenshot%202021-01-08%20at%206.49.25%20PM.png" />
   </a>&nbsp;&nbsp;
 </p>
 
@@ -10,7 +10,7 @@
 ## Chat Window
 <p align='center'>
   <a>
-    <img alt="" src="https://github.com/Kushagrabainsla/Superchat/blob/master/Screenshot%202021-01-08%20at%206.49.12%20PM.png" />
+    <img width=400px src="https://github.com/Kushagrabainsla/Superchat/blob/master/Screenshot%202021-01-08%20at%206.49.12%20PM.png" />
   </a>&nbsp;&nbsp;
 </p>
 
