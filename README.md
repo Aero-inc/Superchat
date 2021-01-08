@@ -1,3 +1,21 @@
+## Sign In Window
+<p align='center'> 
+  <a>
+    <img alt="" src="https://github.com/Kushagrabainsla/Superchat/blob/master/Screenshot%202021-01-08%20at%206.49.25%20PM.png" />
+  </a>&nbsp;&nbsp;
+</p>
+
+<Br>
+  
+## Chat Window
+<p align='center'>
+  <a>
+    <img alt="" src="https://github.com/Kushagrabainsla/Superchat/blob/master/Screenshot%202021-01-08%20at%206.49.12%20PM.png" />
+  </a>&nbsp;&nbsp;
+</p>
+
+<Br>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
