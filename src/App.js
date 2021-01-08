@@ -8,9 +8,16 @@ import 'firebase/auth';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
+import img from './assets/send_button.png';
+
 firebase.initializeApp({
-  // Copy and paste them your firebase IDs you get when you start a new project,
-  // to get all the messages in your firebase collection 
+  apiKey: "AIzaSyC5W9AC2kIfMaCznS1C7_UZTlN8y90BsCc",
+  authDomain: "symbolic-heaven-293012.firebaseapp.com",
+  projectId: "symbolic-heaven-293012",
+  storageBucket: "symbolic-heaven-293012.appspot.com",
+  messagingSenderId: "701393594800",
+  appId: "1:701393594800:web:e5aa0865a923376cddce75",
+  measurementId: "G-LK8F106M3Y" 
 })
 
 const auth = firebase.auth();
@@ -22,7 +29,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1> 💬 MESSAGES</h1>
+        <h1>💬 SUPERCHAT</h1>
         <SignOut />
       </header>
 
@@ -88,8 +95,11 @@ function ChatRoom() {
       </main>
 
       <form onSubmit={sendMessage}>
-        <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="say something nice" />
-        <button type="submit" disabled={!formValue}>Send</button>
+        <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Say something nice" />
+        <button type="submit" disabled={!formValue}>
+          <img alt='' src={img}/>
+        </button>
+      
       </form>
     </>)
 }
@@ -100,7 +110,7 @@ function ChatMessage(props) {
   const messageClass = uid === auth.currentUser.uid ? 'sent' : 'received';
   return (<>
     <div className={`message ${messageClass}`}>
-      <img src={photoURL} />
+      <img alt='' src={photoURL} />
       <p>{text}</p>
     </div>
   </>)

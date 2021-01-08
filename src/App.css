@@ -66,7 +66,10 @@ form {
 }
 
 form button {
-  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12%;
   background-color: rgb(88, 179, 133);
 }
 
