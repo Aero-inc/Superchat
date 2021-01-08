@@ -1,5 +1,5 @@
 body {
-  background-color: #282c34;
+  background-color: #000000;
 }
 
 .App {
@@ -30,7 +30,7 @@ body {
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-  background-color: rgb(40, 37, 53);
+  background-color: rgb(238, 252, 242);
 }
 
 main {
@@ -51,14 +51,14 @@ main::-webkit-scrollbar-track {
 }
 
 main::-webkit-scrollbar-thumb {
-  background: #6649b8;
+  background: #66bac0;
 }
 
 form {
-  height: 10vh;
+  height: 8vh;
   position: fixed;
   bottom: 0;
-  background-color: rgb(24, 23, 23);
+  background-color: rgb(88, 179, 133);
   width: 100%;
   max-width: 728px;
   display: flex;
@@ -67,7 +67,7 @@ form {
 
 form button {
   width: 20%;
-  background-color: rgb(56, 56, 143);
+  background-color: rgb(91, 192, 162);
 }
 
 input {
